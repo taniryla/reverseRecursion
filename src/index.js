@@ -50,4 +50,9 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-function reverse(str) {}
+function reverse(str) {
+  // base case
+  if (str.length <= 1) return str;
+  // recursion
+  return reverse(str.slice(1)) + str[0];
+}
